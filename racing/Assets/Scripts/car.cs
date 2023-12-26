@@ -15,19 +15,19 @@ public class car : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(-5f * Time.deltaTime, 0f, 0f);
+            this.transform.Translate(0f, 0f, 17f * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(5f * Time.deltaTime, 0f, 0f);
+            this.transform.Translate(0f, 0f, -12 * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(0f, -10f * Time.deltaTime, 0f);
+            this.transform.Rotate(0f, -20f * Time.deltaTime, 0f);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(0f, 10f * Time.deltaTime, 0f);
+            this.transform.Rotate(0f, 20f * Time.deltaTime, 0f);
         }
     }
 }
