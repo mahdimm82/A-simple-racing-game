@@ -23,11 +23,11 @@ public class car : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.A))
         {
-            this.transform.Translate(0f, -10f * Time.deltaTime, 0f);
+            transform.Translate(0f, -10f * Time.deltaTime, 0f);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            this.transform.Translate(0f, 10f * Time.deltaTime, 0f);
+            transform.Translate(0f, 10f * Time.deltaTime, 0f);
         }
     }
 }
